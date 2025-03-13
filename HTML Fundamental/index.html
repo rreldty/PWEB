@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Fundamental</title>
+</head>
+<body>
+
+    <!-- div fungsi nya untuk membungkus beberapa elemen/ code menjadi satu block -->
+    <div>
+    <!-- logo HTML -->
+     <img src="image.png" alt="Logo HTML">
+<!-- judul -->
+    <h2>HTML</h2>
+</div>
+<hr>
+    <!-- pengantar -->
+     <!-- span membungkus elemen secara inline dan ukuran nya hanya sebesar elemen yang ada di dalam nya, di gunakan untuk CSS -->
+    <p><B> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HyperText Markup Language (HTML)</a></B> adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Cascading Style Sheets (CSS)</a> dan bahasa skrip lainnya seperti <span>JavaScript</span>, VBScript, dan PHP.</p>
+
+
+    <h3> Sejarah html</h3>
+    <!-- hr dapat di gunakan sebagai pembatas horizontal -->
+    <hr >
+   <h4> 24 November 1995</h4>
+
+    <!-- sup bisa digunakan untuk perpangkatan untuk model matematika karna posisi nya seperti pangkat -->
+     <!-- sub dapat di gunakan jika ingin membuat suatu angka yang posisi nya di bawah(kebalikan pangkat) seperti penulisan kimia -->
+
+<p>HTML <sub>2.0</sub> dipublikasikan sebagai IETF RFC 1866<sup>[1]</sup>. Penambahan RFC memperbanyak kemampuan untuk:</p>
+<ul>
+    <li>November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)</li>
+    <li>Mei 1996: RFC 1942 (tabel)</li>
+    <li>Agustus 1996: RFC 1980 (peta gambar berbasis klien)</li>
+    <li>Januari 1997: RFC 2070 (internasionalisasi)</li>
+</ul>
+<h4>14 Januari 1997</h4>
+<p>HTML 3.2[7] dipublikasikan sebagai Konsorsium World Wide Web. Versi ini merupakan versi pertama yang dikembangkan dan distandardisasi secara khusus oleh Konsorsium World Wide Web, sebagaimana IETF sudah menutup kelompok kerja HTMLnya pada 12 September, 1996. 
+    <br>         <!-- br di gunakan sebagai spasi, setiap satu <br> brrti ada 1 spasi-->
+    <br>
+[8]Pada awalnya disebut "Wilbur",[9] HTML 3.2 menghilangkan rumus matematika sama sekali yang sedang berkonsiliasi atas kasus tumpang tindih antara berbagai kepemilikan dan mengadopsi sebagian besar tanda markah visual dari Netscape. Elemen kedip dari Netscape dan elemen marquee besutan Microsoft dihilangkan karena kesepakatan bersama antara kedua perusahaan. Sebuah markup untuk rumus matematika serupa dengan yang ada dalam HTML tidak memiliki standar sampai 14 bulan kemudian di MathML.</p>
+<h4>18 December 1997</h4>
+<p>HTML 4.0[10] dipublikasikan sebagai rekomendasi W3C. Versi ini memiliki 3 variasi, yaitu:</p>
+<ul>
+    <li>Ketat, di mana elemen terdeprekasi dilarang.</li>
+    <li>Transisional, di mana elemen terdeprekasi diperbolehkan.</li>
+    <li>Frameset, di mana sebagian besar hanya elemen yang berkaitan dengan frame diperbolehkan.</li>
+</ul>
+
+<hr>
+<h3>Mengenal entity code</h3>
+<p>Entity code bisa di bilang kita membuat suatu charater yang tidak ada di laptop kita. <br>
+contoh nya sebagai berikut :</p>
+<ul>
+    <li>&copy;</li>
+    <li>&uarr;</li>
+    <li>&euro;</li>
+</ul>
+<p>penulisan selalu di awali dengan "&" dan di akhiri dengan ";". <br> untuk sumber referensi dapat dibuka di <a href="https://entitycode.com/">entitycode.com</a> dan <a href="https://www.w3schools.com/html/html_entities.asp">w3schools</a></p>
+
+<hr>
+
+<h4>Tabel Populasi</h4>
+
+<!-- <table> digunakan untuk menginisiasikan table baru  -->
+<!-- <tr> digunakan untuk membuat baris baru -->
+<!-- <th>  sebagai header dari table-->
+<!-- <td> sebagai colom baru -->
+
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Negara</th>
+            <th>Populasi</th>
+        </tr>   
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>India</td>
+            <td>1.441.580.000</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Tiongkok</td>
+            <td>1.434.270.000</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th>No</th>
+            <th>Negara</th>
+            <th>Populasi</th>
+        </tr>
+    </tfoot>
+   
+
+    
+
+
+</table>
+
+<br>
+<br>
+<br>
+
+<h3>Tabel Advance</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th rowspan="2">Nama</th>
+            <th colspan="3">Keterangan</th>
+        </tr>
+
+        <tr>
+            <th>Umur</th>
+            <th>Tempat Tinggal</th>
+            <th>Tempat Tanggal Lahir</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Camelia Sabrina</td>
+            <td>17 Tahun</td>
+            <td>Kisaran</td>
+            <td>Kisaran, tanggal sekian</td>
+        </tr>
+
+        <tr>
+            <td>Dofflaminggo</td>
+            <td>25 Tahun</td>
+            <td>Wano Kuni</td>
+            <td>East Blue, 25 sekian</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h3>Pembuatan Form</h3>
+
+<!-- Method jika tidak di tulis  secara default di akan get -->
+<form action="/input" method ="get">
+
+    <!-- for dan id harus memiliki nama yang sama  -->
+    <div>
+    <label for="Name">Nama lengkap :</label>
+    <input type="text" placeholder = "Name" id="Name" name="Name" required>
+    </div>
+
+    <div>
+    <label for="email"> Email :</label>
+    <input type="email" placeholder="email" id="email" name="email" required><br>
+    </div>
+
+    <div>
+    <label for="password">Password :</label>
+    <input type="password" placeholder="password" id="password" name="password" required minlength="8" maxlength="20"><br>
+    </div>
+
+    <div>
+    <label for="nomor">Nomor HP :</label>
+    <input type="number" placeholder="Phone Number" id="nomor" name="nomor" required maxlength="12"><br>
+    </div>
+
+    <div>
+    <label for="color">Color :</label>
+    <input type="color" placeholder="Color" id="color" name="color"><br>
+    </div>
+
+    <button type = "submit">Kirim</button>
+
+</form>
+
+<hr>
+
+<h3>Pesanan</h3>
+
+<form action="/order/pakaian">
+<div>
+<label for="baju">Baju</label> <br>
+<input type="radio" name="baju" id="" value="Kemeja" checked> <label for="">Kemeja</label>
+<input type="radio" name="baju" id="" value="Sweater"> <label for="">Sweater</label>
+<br>
+<button type="submit">Order</button>
+</div>
+</form>
+
+<form action="/order/makanan">
+<div>
+    <label for="ukuran">ukuran</label> <br>
+    <select name="ukuran" id="ukuran">
+        <option>-</option>
+        <option value="small" selected>small</option>
+        <option value="medium">medium</option>
+        <option value="large">large</option>
+    </select>
+</div>    
+<div>
+    <p>
+    <label for="notes">Catatan</label>
+    </p>
+    <textarea name="notes" id="notes" cols="30" rows="7"></textarea>
+</div>
+<label for="term">Apakah pesanan sudah sesuai?</label>
+<input type="checkbox" name="term" id="term">
+
+    <button type="submit">Order</button>
+</form>
+
+
+   
+
+
+
+</body>
+</html>
